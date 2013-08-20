@@ -57,8 +57,8 @@ Item {
         height: 16
         anchors.fill: parent
 
-        property color color1: Qt.rgba(0.0, 0.2, 0.7, 0.5)
-        property color color2: Qt.rgba(0.0, 0.2, 0.9, 0.7)
+        property color color1: Qt.rgba(0.0, 0.25, 0.8, 0.6)
+        property color color2: Qt.rgba(0.0, 0.15, 1.0, 0.8)
 
         gradient: Gradient {
             GradientStop { position: 0.0; color: "transparent"}
