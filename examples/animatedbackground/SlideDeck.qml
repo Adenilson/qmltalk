@@ -50,7 +50,7 @@ Presentation {
 
     BackgroundSwirls {}
 
-    textColor: "white"
+    textColor: "black"
 
     Slide {
         centeredText: "Animated Background"

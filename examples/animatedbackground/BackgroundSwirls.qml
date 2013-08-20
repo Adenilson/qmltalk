@@ -48,10 +48,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        gradient: Gradient {
-            GradientStop { position: 0; color: "lightsteelblue" }
-            GradientStop { position: 1; color: "black" }
-        }
+        color: "white"
     }
 
     Rectangle {
@@ -60,8 +57,8 @@ Item {
         height: 16
         anchors.fill: parent
 
-        property color color1: Qt.rgba(0.8, 0.8, 1, 0.3)
-        property color color2: Qt.rgba(0.8, 0.8, 1, 0.3)
+        property color color1: Qt.rgba(0.0, 0.2, 0.7, 0.5)
+        property color color2: Qt.rgba(0.0, 0.2, 0.9, 0.7)
 
         gradient: Gradient {
             GradientStop { position: 0.0; color: "transparent"}
@@ -92,29 +89,6 @@ Item {
             speed: (index + 1) / 5
             colorTable: colorTableSource
         }
-    }
-
-    ParticleSystem{
-        id: particles
-    }
-    ImageParticle{
-        anchors.fill: parent
-        system: particles
-        source: "particle.png"
-        alpha: 0
-        colorVariation: 0.3
-    }
-
-    Emitter{
-        anchors.fill: parent
-        system: particles
-        emitRate: Math.sqrt(parent.width * parent.height) / 30
-        lifeSpan: 2000
-        size: 4
-        sizeVariation: 2
-
-        acceleration: AngleDirection { angle: 90; angleVariation: 360; magnitude: 20; }
-        velocity: AngleDirection { angle: -90; angleVariation: 360; magnitude: 10; }
     }
 
 }
