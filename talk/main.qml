@@ -189,5 +189,26 @@ Presentation
         ]
     }
 
+    Slide {
+        title: "Desire/goals"
+        content: [
+            "One workflow for everyone, regardless of employer",
+            " Merit-based open project",
+            "Fast, reliable CI that stopped bad commits",
+            "Co-exist with the commercial business"
+        ]
+    }
+
+    Slide {
+        title: "The Qt project is born"
+        content: [
+            "Independent foundation owns the servers",
+            "CI-controlled branches in Git",
+            "Review system using Gerrit",
+            "Meritocratic approval of contributions",
+            "Decisions on mailing lists"
+        ]
+    }
+
 
 }
