@@ -279,5 +279,28 @@ Presentation
 
     }
 
+    Slide {
+        title: "The good: the community"
+        content: [
+            "Live, vibrant community",
+            "Active IRC channels and mailing lists",
+            "Three Qt Contributor Summit events",
+            " Last in July 2013, with 200 participants",
+            "Qt Developer Days for Qt users sold out in the past 2 years"
+        ]
+    }
+/*
+    Slide {
+        title: "The good: the community"
+        content: [
+            "First major Qt release in 7 years*",
+            "Two feature releases - Qt 4.8 (Dec/2011) and Qt 5.1 (June/2013)",
+            "5 feature releases of Qt Creator (2.4 through 2.8)",
+            "A lot of patch releases, alp",
+            "Decisions on mailing lists"
+        ]
+
+    }
+*/
 
 }
