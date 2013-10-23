@@ -289,18 +289,28 @@ Presentation
             "Qt Developer Days for Qt users sold out in the past 2 years"
         ]
     }
-/*
+
     Slide {
-        title: "The good: the community"
+        title: "Some other numbers"
         content: [
-            "First major Qt release in 7 years*",
-            "Two feature releases - Qt 4.8 (Dec/2011) and Qt 5.1 (June/2013)",
-            "5 feature releases of Qt Creator (2.4 through 2.8)",
-            "A lot of patch releases, alp",
-            "Decisions on mailing lists"
+            "68900 commits submitted",
+            " Average: 656.2 / week",
+            "By 592 different email addresses",
+            "Some 120 different companies",
         ]
 
+        Image {
+            id: imgChart
+            source: "imgs/chart.png"
+            fillMode: Image.PreserveAspectFit
+            width: parent.width * 0.9;
+            height: parent.height * 0.9;
+            smooth: true
+            anchors { right: parent.right; top: parent.top;
+                rightMargin: -10
+            }
+        }
+
     }
-*/
 
 }
