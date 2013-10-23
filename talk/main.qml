@@ -26,11 +26,11 @@ Presentation
 
         Image {
             id: rectLowerbar
-            anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
-            source: "imgs/stripe01.png"
-            width: parent.width * 0.3; height: parent.height * 0.2
             smooth: true
-
+            source: "imgs/stripe01.png"
+            width: parent.width * 0.3; height: parent.height * 0.25
+            anchors { left: parent.left; right: parent.right;
+                bottom: parent.bottom; bottomMargin: 10 }
 
         }
     }
@@ -63,17 +63,27 @@ Presentation
         }
 
         Text {
+            id: txtTitle
+            text: "Qt Project - 2 years later"
+            font { pixelSize: 38; }
+            anchors { right: parent.right; top: parent.top;
+                topMargin: 0.3 * parent.height;
+                rightMargin: 30
+            }
+        }
+
+        Text {
             id: txtAuthor
-            text: "The talker"
-            color: "#e6e6ff"
+            text: "Thiago Macieira, Qt Core Maintainer"
             font { pixelSize: 28; }
-            anchors { right: parent.right; bottom: parent.bottom;
-                bottomMargin: 0.02 * parent.height }
+            anchors { right: parent.right; top: parent.top;
+                topMargin: 0.7 * parent.height;
+                rightMargin: 30
+            }
 
             Text {
                 id: txtTitles
-                text: "BSc. MSc.\nFoo developer\nFoo contributor"
-                color: "#e6e6ff"
+                text: "Edinburgh, Oct 2013"
                 font { pixelSize: 20; }
                 anchors { top: parent.bottom; left: parent.left; }
             }
