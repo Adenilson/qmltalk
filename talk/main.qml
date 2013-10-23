@@ -155,6 +155,18 @@ Presentation
 
 
     Slide {
+        anchors.fill: parent
+        Image {
+            id: imgTimeline
+            source: "imgs/timeline.png"
+            fillMode: Image.PreserveAspectFit
+            smooth: true
+            anchors.fill: parent
+        }
+    }
+
+
+    Slide {
         title: "Slide {} Element"
         content: [
             "Bullet points",
