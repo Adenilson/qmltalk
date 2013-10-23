@@ -162,6 +162,7 @@ Presentation
             fillMode: Image.PreserveAspectFit
             smooth: true
             anchors.fill: parent
+            anchors.bottomMargin: 30
         }
     }
 
