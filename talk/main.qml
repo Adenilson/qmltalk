@@ -167,14 +167,12 @@ Presentation
 
 
     Slide {
-        title: "Slide {} Element"
+        title: "Motivations"
         content: [
-            "Bullet points",
-            "Should be short",
-            "And to the point",
-            " Sub point",
-            "  Sub Sub point",
-            " Sub point"
+            "Desire to really be an open project",
+            " Meego",
+            "Fix problems with the 2009 contribution model",
+            "Fix problems with the development workflow"
         ]
     }
 
