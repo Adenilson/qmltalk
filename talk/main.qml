@@ -210,5 +210,28 @@ Presentation
         ]
     }
 
+    Slide {
+        anchors.fill: parent
+        Image {
+            id: imgStuff
+            source: "imgs/stuff.png"
+            fillMode: Image.PreserveAspectFit
+            smooth: true
+            anchors.fill: parent
+            anchors.bottomMargin: 30
+        }
+
+        Text {
+            id: txtPrinciples
+            text: "Principles"
+            font { pixelSize: 38; }
+            anchors { left: parent.left; top: parent.top;
+                topMargin: 0.1 * parent.height;
+                leftMargin: 30
+            }
+        }
+
+    }
+
 
 }
