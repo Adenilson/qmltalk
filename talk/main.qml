@@ -233,5 +233,28 @@ Presentation
 
     }
 
+    Slide {
+        anchors.fill: parent
+        Image {
+            id: imgHow
+            source: "imgs/how.png"
+            fillMode: Image.PreserveAspectFit
+            smooth: true
+            anchors.fill: parent
+            anchors.bottomMargin: 30
+        }
+
+        Text {
+            id: txtHow
+            text: "How it works"
+            font { pixelSize: 38; }
+            anchors { left: parent.left; top: parent.top;
+                topMargin: 0.05 * parent.height;
+                leftMargin: 30
+            }
+        }
+
+    }
+
 
 }
