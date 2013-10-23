@@ -4,14 +4,14 @@ import Qt.labs.presentation 1.0
 Presentation
 {
     id: frmParent
-    width: 1024
+    width: 1366
     height: 768
-    textColor: "white"
-
+    textColor: "black"
+/*
     BackgroundSwirls {
         id: itmBackground
     }
-
+*/
     SlideCounter {
         id: itmCounter
         visible: false
@@ -23,19 +23,14 @@ Presentation
     Item {
         id: itmParent
         anchors.fill: parent
-        Rectangle {
-            id: rectTopbar
-            color: "#333333"
-            anchors { left: parent.left; right: parent.right; top: parent.top }
-            height: parent.height * 0.16
 
-        }
-
-        Rectangle {
+        Image {
             id: rectLowerbar
-            color: "#333333"
             anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
-            height: parent.height * 0.16
+            source: "imgs/stripe01.png"
+            width: parent.width * 0.3; height: parent.height * 0.2
+            smooth: true
+
 
         }
     }
@@ -44,13 +39,9 @@ Presentation
         from.visible = false
         to.visible = true
         if (from == sldFirst) {
-            itmParent.visible = false
             itmCounter.visible = true
-            frmParent.textColor = "black"
         } else if (to == sldFirst) {
-            itmParent.visible = true
             itmCounter.visible = false
-            frmParent.textColor = "white"
         }
 
         return true
@@ -59,15 +50,15 @@ Presentation
 
     Slide {
         id: sldFirst
-        title: "Your title here"
+        anchors.fill: parent
         Image {
-            source: "imgs/background.jpg"
-
+            source: "imgs/qt-logo.png"
+            width: parent.width * 0.3; height: parent.height * 0.4
+            fillMode: Image.PreserveAspectFit
+            smooth: true
             anchors {
-                fill: parent; topMargin: -(parent.height * 0.055)
-                bottomMargin: (parent.height * 0.09)
-                rightMargin: -(parent.width * 0.06)
-                leftMargin: -(parent.width * 0.06)
+                top: parent.top; left: parent.left
+                leftMargin: 10
             }
         }
 
