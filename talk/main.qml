@@ -20,28 +20,38 @@ Presentation
     }
 
     //---------------------- TOP/LOWER BAR ----------------------//
-    Item {
-        id: itmParent
-        anchors.fill: parent
 
-        Image {
-            id: rectLowerbar
-            smooth: true
-            source: "imgs/stripe01.png"
-            width: parent.width * 0.3; height: parent.height * 0.25
-            anchors { left: parent.left; right: parent.right;
-                bottom: parent.bottom; bottomMargin: 10 }
+    Image {
+        id: rectLowerStart
+        smooth: true
+        source: "imgs/stripe01.png"
+        width: parent.width * 0.3; height: parent.height * 0.25
+        anchors { left: parent.left; right: parent.right;
+            bottom: parent.bottom; bottomMargin: 10 }
 
-        }
     }
+
+    Image {
+        id: rectLowerbar
+        visible: false
+        smooth: true
+        source: "imgs/stripe02.png"
+        width: parent.width * 0.3; height: parent.height * 0.13
+        anchors { left: parent.left; right: parent.right;
+            bottom: parent.bottom; bottomMargin: 10 }
+
+    }
+
 
     function switchSlides(from, to, forward) {
         from.visible = false
         to.visible = true
         if (from == sldFirst) {
-            itmCounter.visible = true
+            rectLowerStart.visible = false
+            rectLowerbar.visible = true
         } else if (to == sldFirst) {
-            itmCounter.visible = false
+            rectLowerStart.visible = true
+            rectLowerbar.visible = false
         }
 
         return true
