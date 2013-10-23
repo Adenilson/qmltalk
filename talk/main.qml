@@ -176,4 +176,17 @@ Presentation
         ]
     }
 
+    Slide {
+        title: "Fixing the earlier problems"
+        content: [
+            "Continuous integration was slow and cumbersome",
+            "Bad commits stayed on forever",
+            "Review system was ad-hoc",
+            " using pastebins",
+            "Some rights were reserved to Nokia engineers",
+            "Legal IP scanning was in the way"
+        ]
+    }
+
+
 }
