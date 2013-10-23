@@ -129,6 +129,32 @@ Presentation
     }
 
     Slide {
+        anchors.fill: parent
+        Image {
+            id: imgCake
+            source: "imgs/cake.png"
+            fillMode: Image.PreserveAspectFit
+            smooth: true
+            anchors {
+                top: parent.top; left: parent.left;
+                right: parent.right; bottomMargin: 30
+            }
+        }
+
+        Text {
+            id: txtAniversary
+            text: "The Qt Project celebrated\n2years on October 22"
+            font { pixelSize: 28 }
+            anchors {
+                top: imgCake.bottom; left: parent.left;
+                right: parent.right;
+            }
+
+        }
+    }
+
+
+    Slide {
         title: "Slide {} Element"
         content: [
             "Bullet points",
