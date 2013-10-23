@@ -100,7 +100,7 @@ Presentation
         }
 
     }
-
+/*
     Slide {
         id: sldSecond
         title: "Yes, slides are QML too..."
@@ -114,16 +114,17 @@ Presentation
             }
         }
     }
-
+*/
     Slide {
-        title: "Slide {} Element"
+        title: "Who am I?"
         content: [
-            "Bullet points",
-            "Should be short",
-            "And to the point",
-            " Sub point",
-            "  Sub Sub point",
-            " Sub point"
+            "Software Architecture at Intel's Open Source Technology
+            Center (OTC) since 2011",
+            " Living in Portland, Oregon",
+            "Maintainer of two modules in the Qt Project",
+            "  QtCore and QtBus",
+            "MBA and double degree in Engineering",
+            "Previously, led the Qt Open Governance project"
         ]
     }
 
