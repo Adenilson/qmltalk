@@ -15,11 +15,8 @@ Presentation
     SlideCounter {
         id: itmCounter
         visible: false
-    }
-
-    Clock {
-        id: itmClock
-        visible: false
+        anchors { left: parent.left }
+        textColor: "black"
     }
 
     //---------------------- TOP/LOWER BAR ----------------------//
@@ -49,12 +46,10 @@ Presentation
         if (from == sldFirst) {
             itmParent.visible = false
             itmCounter.visible = true
-            itmClock.visible = true
             frmParent.textColor = "black"
         } else if (to == sldFirst) {
             itmParent.visible = true
             itmCounter.visible = false
-            itmClock.visible = false
             frmParent.textColor = "white"
         }
 
@@ -99,7 +94,7 @@ Presentation
         id: sldSecond
         title: "Yes, slides are QML too..."
         Image {
-            source: "imgs/dog-food.jpg"
+            source: "imgs/dog-food.png"
             fillMode: Image.PreserveAspectFit
             anchors { fill: parent; topMargin: -(parent.height * 0.055)
                 bottomMargin: (parent.height * 0.09)
